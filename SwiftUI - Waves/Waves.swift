@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct WavingBackground: View {
+public struct WavingBackground: View {
     @State var allWavesOffsetY: CGFloat = -3.0
     
     @State private var foregroundOffset = CGPoint(x: 0, y: 85)
@@ -35,7 +35,9 @@ struct WavingBackground: View {
         Animation.easeInOut.speed(0.15).repeatForever()
     }
     
-    var body: some View {
+    public init() {}
+     
+    public var body: some View {
         ZStack {
             VStack {
                 ZStack {
