@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+@available(iOS 14, macOS 11.0, *)
 public struct WavingBackground: View {
     @State var allWavesOffsetY: CGFloat = -3.0
     
